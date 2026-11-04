@@ -1,0 +1,82 @@
+{
+  "name": "@frenchexdev2/ts-codegen-pipeline",
+  "version": "0.0.1",
+  "description": "Roslyn-style multi-stage TypeScript source generator pipeline (virtFS + fixpoint + atomic commit). Companion to @frenchexdev2/build-pipeline.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "sourcegen": "./bin/sourcegen-entry.mjs"
+  },
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./attributes": {
+      "source": "./src/attributes.ts",
+      "types": "./dist/attributes.d.ts",
+      "import": "./dist/attributes.js",
+      "default": "./dist/attributes.js"
+    },
+    "./types": {
+      "source": "./src/types.ts",
+      "types": "./dist/types.d.ts",
+      "import": "./dist/types.js",
+      "default": "./dist/types.js"
+    },
+    "./analyzers": {
+      "source": "./src/analyze/builtin/index.ts",
+      "types": "./dist/analyze/builtin/index.d.ts",
+      "import": "./dist/analyze/builtin/index.js",
+      "default": "./dist/analyze/builtin/index.js"
+    },
+    "./testing": {
+      "source": "./src/testing/index.ts",
+      "types": "./dist/testing/index.d.ts",
+      "import": "./dist/testing/index.js",
+      "default": "./dist/testing/index.js"
+    },
+    "./test-bindings-scanner": {
+      "source": "./src/scan/test-bindings-scanner.ts",
+      "types": "./dist/scan/test-bindings-scanner.d.ts",
+      "default": "./dist/scan/test-bindings-scanner.js",
+      "import": "./dist/scan/test-bindings-scanner.js"
+    }
+  },
+  "dependencies": {
+    "chokidar": "catalog:",
+    "commander": "catalog:",
+    "ts-morph": "catalog:",
+    "@frenchexdev2/requirements-shared-kernel": "0.1.0",
+    "typescript": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "@typescript/native": "catalog:",
+    "@vitest/coverage-v8": "catalog:",
+    "fast-check": "catalog:",
+    "vitest": "catalog:"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run --coverage",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "dist/**/*.d.ts.map",
+    "bin/"
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "Stéphane Erard <stephane.erard@gmail.com> (https://serard.dev)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrenchExDev2/CodeGeneratorPipeline.ts.git",
+    "directory": "packages/ts-codegen-pipeline"
+  }
+}

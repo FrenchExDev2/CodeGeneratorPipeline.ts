@@ -1,0 +1,1135 @@
+{
+  "TSCP-ANALYZER-BUILTINS": {
+    "an0100EmptyIdError": [
+      {
+        "file": "src/analyze/builtin/generator-id-non-empty.ts",
+        "symbol": "GeneratorIdNonEmptyAnalyzer"
+      },
+      {
+        "file": "src/testing/make-in-memory-project.ts",
+        "symbol": "makeInMemoryProject"
+      },
+      {
+        "file": "src/testing/run-analyzer.ts",
+        "symbol": "runAnalyzer"
+      }
+    ],
+    "an0100LiteralIdOk": [
+      {
+        "file": "src/analyze/builtin/generator-id-non-empty.ts",
+        "symbol": "GeneratorIdNonEmptyAnalyzer"
+      },
+      {
+        "file": "src/testing/make-in-memory-project.ts",
+        "symbol": "makeInMemoryProject"
+      },
+      {
+        "file": "src/testing/run-analyzer.ts",
+        "symbol": "runAnalyzer"
+      }
+    ],
+    "an0100RuntimeIdWarning": [
+      {
+        "file": "src/analyze/builtin/generator-id-non-empty.ts",
+        "symbol": "GeneratorIdNonEmptyAnalyzer"
+      },
+      {
+        "file": "src/testing/make-in-memory-project.ts",
+        "symbol": "makeInMemoryProject"
+      },
+      {
+        "file": "src/testing/run-analyzer.ts",
+        "symbol": "runAnalyzer"
+      }
+    ],
+    "an0101DuplicateIdsRelated": [
+      {
+        "file": "src/analyze/builtin/generator-id-unique.ts",
+        "symbol": "GeneratorIdUniqueAnalyzer"
+      },
+      {
+        "file": "src/testing/make-in-memory-project.ts",
+        "symbol": "makeInMemoryProject"
+      },
+      {
+        "file": "src/testing/run-analyzer.ts",
+        "symbol": "runAnalyzer"
+      }
+    ],
+    "an0110DynamicCodeIgnored": [
+      {
+        "file": "src/analyze/builtin/diagnostic-has-code.ts",
+        "symbol": "DiagnosticHasCodeAnalyzer"
+      },
+      {
+        "file": "src/testing/make-in-memory-project.ts",
+        "symbol": "makeInMemoryProject"
+      },
+      {
+        "file": "src/testing/run-analyzer.ts",
+        "symbol": "runAnalyzer"
+      }
+    ],
+    "an0110EmptyCodeError": [
+      {
+        "file": "src/analyze/builtin/diagnostic-has-code.ts",
+        "symbol": "DiagnosticHasCodeAnalyzer"
+      },
+      {
+        "file": "src/testing/make-in-memory-project.ts",
+        "symbol": "makeInMemoryProject"
+      },
+      {
+        "file": "src/testing/run-analyzer.ts",
+        "symbol": "runAnalyzer"
+      }
+    ],
+    "an0120FileSystemPortAllowed": [
+      {
+        "file": "src/analyze/builtin/no-direct-fs.ts",
+        "symbol": "NoDirectFsAnalyzer"
+      },
+      {
+        "file": "src/testing/make-in-memory-project.ts",
+        "symbol": "makeInMemoryProject"
+      },
+      {
+        "file": "src/testing/run-analyzer.ts",
+        "symbol": "runAnalyzer"
+      }
+    ],
+    "an0120NodeFsImportDetected": [
+      {
+        "file": "src/analyze/builtin/no-direct-fs.ts",
+        "symbol": "*"
+      },
+      {
+        "file": "src/analyze/builtin/no-direct-fs.ts",
+        "symbol": "NoDirectFsAnalyzer"
+      },
+      {
+        "file": "src/testing/make-in-memory-project.ts",
+        "symbol": "makeInMemoryProject"
+      },
+      {
+        "file": "src/testing/run-analyzer.ts",
+        "symbol": "runAnalyzer"
+      }
+    ]
+  },
+  "TSCP-ANALYZER-CLI": {
+    "footerCountsBySeverity": [
+      {
+        "file": "src/bin/format-diagnostics.ts",
+        "symbol": "buildFooterInfo"
+      },
+      {
+        "file": "src/bin/format-diagnostics.ts",
+        "symbol": "formatFooter"
+      }
+    ],
+    "footerHasSlowest": [
+      {
+        "file": "src/bin/format-diagnostics.ts",
+        "symbol": "buildFooterInfo"
+      },
+      {
+        "file": "src/bin/format-diagnostics.ts",
+        "symbol": "formatFooter"
+      }
+    ],
+    "groupingByFileHeader": [
+      {
+        "file": "src/bin/format-diagnostics.ts",
+        "symbol": "formatDiagnostics"
+      }
+    ],
+    "locationFormatPathLineCol": [
+      {
+        "file": "src/bin/format-diagnostics.ts",
+        "symbol": "formatLocation"
+      }
+    ],
+    "locationPathRelativeToConsumerRoot": [
+      {
+        "file": "src/bin/format-diagnostics.ts",
+        "symbol": "formatLocation"
+      }
+    ],
+    "noColorFlagProducesAsciiPure": [
+      {
+        "file": "src/bin/format-diagnostics.ts",
+        "symbol": "formatOne"
+      }
+    ]
+  },
+  "TSCP-ANALYZER-DIAGNOSTIC": {
+    "diagFromNodeColumnsAreOneBased": [
+      {
+        "file": "src/analyze/diag.ts",
+        "symbol": "diagFromNode"
+      }
+    ],
+    "diagFromNodeMultiLineEndAfterStart": [
+      {
+        "file": "src/analyze/diag.ts",
+        "symbol": "diagFromNode"
+      }
+    ],
+    "diagFromNodeNoRelatedIsUndefined": [
+      {
+        "file": "src/analyze/diag.ts",
+        "symbol": "diagFromNode"
+      }
+    ],
+    "diagFromNodeRelatedFillsLocations": [
+      {
+        "file": "src/analyze/diag.ts",
+        "symbol": "diagFromNode"
+      }
+    ],
+    "diagFromNodeStartOfFileIsLine1Col1": [
+      {
+        "file": "src/analyze/diag.ts",
+        "symbol": "diagFromNode"
+      }
+    ],
+    "diagnosticShapeCompiles": [
+      {
+        "file": "src/analyze/diag.ts",
+        "symbol": "diagFromNode"
+      }
+    ]
+  },
+  "TSCP-ANALYZER-EXTENSIBILITY": {
+    "builtinsExposedViaSubExport": [
+      {
+        "file": "src/analyze/builtin/index.ts",
+        "symbol": "*"
+      }
+    ],
+    "executionOrderMatchesListOrder": [
+      {
+        "file": "src/analyze/run-analyzers.ts",
+        "symbol": "runAnalyzers"
+      }
+    ],
+    "runnerDoesNotDiscriminateProvenance": [
+      {
+        "file": "src/analyze/run-analyzers.ts",
+        "symbol": "runAnalyzers"
+      }
+    ],
+    "thirdPartyArrayIsConsumable": [
+      {
+        "file": "src/analyze/run-analyzers.ts",
+        "symbol": "runAnalyzers"
+      }
+    ],
+    "thirdPartyFactoryIsConsumable": [
+      {
+        "file": "src/analyze/run-analyzers.ts",
+        "symbol": "runAnalyzers"
+      }
+    ]
+  },
+  "TSCP-ANALYZER-LIFECYCLE": {
+    "analyzerContextIsReadOnly": [
+      {
+        "file": "src/analyze/run-analyzers.ts",
+        "symbol": "runAnalyzers"
+      }
+    ],
+    "analyzersRunPostFixpointPreCommit": [
+      {
+        "file": "src/analyze/run-analyzers.ts",
+        "symbol": "runAnalyzers"
+      },
+      {
+        "file": "src/runner/run-fixpoint.ts",
+        "symbol": "runFixpoint"
+      }
+    ],
+    "errorAbortsCommit": [
+      {
+        "file": "src/analyze/run-analyzers.ts",
+        "symbol": "runAnalyzers"
+      },
+      {
+        "file": "src/runner/run-fixpoint.ts",
+        "symbol": "runFixpoint"
+      }
+    ],
+    "errorDoesNotShortCircuitOtherAnalyzers": [
+      {
+        "file": "src/analyze/run-analyzers.ts",
+        "symbol": "runAnalyzers"
+      }
+    ],
+    "supportsAsyncReturn": [
+      {
+        "file": "src/analyze/run-analyzers.ts",
+        "symbol": "runAnalyzers"
+      }
+    ],
+    "supportsSyncReturn": [
+      {
+        "file": "src/analyze/run-analyzers.ts",
+        "symbol": "runAnalyzers"
+      }
+    ]
+  },
+  "TSCP-ANALYZER-PERF": {
+    "thresholdExceededYieldsWarning": [
+      {
+        "file": "src/analyze/run-analyzers.ts",
+        "symbol": "runAnalyzers"
+      },
+      {
+        "file": "src/analyze/run-analyzers.ts",
+        "symbol": "SLOW_ANALYZER_CODE"
+      }
+    ],
+    "thresholdOverridable": [
+      {
+        "file": "src/analyze/run-analyzers.ts",
+        "symbol": "runAnalyzers"
+      },
+      {
+        "file": "src/analyze/run-analyzers.ts",
+        "symbol": "SLOW_ANALYZER_CODE"
+      }
+    ],
+    "timingsAreNonNegative": [
+      {
+        "file": "src/analyze/run-analyzers.ts",
+        "symbol": "runAnalyzers"
+      }
+    ],
+    "timingsMapHasEveryAnalyzerId": [
+      {
+        "file": "src/analyze/run-analyzers.ts",
+        "symbol": "runAnalyzers"
+      }
+    ]
+  },
+  "TSCP-ANALYZER-SUPPRESSION": {
+    "emptyCodeSuppressesAll": [
+      {
+        "file": "src/analyze/suppression.ts",
+        "symbol": "makeSuppressionChecker"
+      }
+    ],
+    "failSafeRunnerFilter": [
+      {
+        "file": "src/analyze/run-analyzers.ts",
+        "symbol": "runAnalyzers"
+      },
+      {
+        "file": "src/analyze/suppression.ts",
+        "symbol": "parseDirectives"
+      }
+    ],
+    "multiCodeCommaSeparated": [
+      {
+        "file": "src/analyze/suppression.ts",
+        "symbol": "makeSuppressionChecker"
+      }
+    ],
+    "otherCodesNotAffected": [
+      {
+        "file": "src/analyze/suppression.ts",
+        "symbol": "makeSuppressionChecker"
+      }
+    ],
+    "singleCodeNextLineSuppression": [
+      {
+        "file": "src/analyze/suppression.ts",
+        "symbol": "makeSuppressionChecker"
+      }
+    ],
+    "whitespaceAroundCodesTolerated": [
+      {
+        "file": "src/analyze/suppression.ts",
+        "symbol": "makeSuppressionChecker"
+      }
+    ]
+  },
+  "TSCP-ANALYZER-TESTKIT": {
+    "contractAcceptsConformingAnalyzer": [
+      {
+        "file": "src/testing/assert-contract.ts",
+        "symbol": "assertAnalyzerContract"
+      }
+    ],
+    "contractRejectsNonDeterministic": [
+      {
+        "file": "src/testing/assert-contract.ts",
+        "symbol": "assertAnalyzerContract"
+      }
+    ],
+    "contractRejectsProjectMutation": [
+      {
+        "file": "src/testing/assert-contract.ts",
+        "symbol": "assertAnalyzerContract"
+      }
+    ],
+    "contractRejectsVirtFsMutation": [
+      {
+        "file": "src/testing/assert-contract.ts",
+        "symbol": "assertAnalyzerContract"
+      }
+    ],
+    "makeInMemoryProjectDoesNotWriteDisk": [
+      {
+        "file": "src/testing/make-in-memory-project.ts",
+        "symbol": "makeInMemoryProject"
+      }
+    ],
+    "makeInMemoryProjectResolvesProvidedPaths": [
+      {
+        "file": "src/testing/make-in-memory-project.ts",
+        "symbol": "makeInMemoryProject"
+      }
+    ],
+    "matcherToHaveCodeWorks": [
+      {
+        "file": "src/testing/matchers.ts",
+        "symbol": "analyzerMatchers"
+      }
+    ],
+    "runAnalyzerOptsOverrideContext": [
+      {
+        "file": "src/testing/make-in-memory-project.ts",
+        "symbol": "makeInMemoryProject"
+      },
+      {
+        "file": "src/testing/run-analyzer.ts",
+        "symbol": "runAnalyzer"
+      }
+    ],
+    "runAnalyzerSeesProvidedProject": [
+      {
+        "file": "src/testing/make-in-memory-project.ts",
+        "symbol": "makeInMemoryProject"
+      },
+      {
+        "file": "src/testing/run-analyzer.ts",
+        "symbol": "runAnalyzer"
+      }
+    ]
+  },
+  "TSCP-ANALYZER-WATCH": {},
+  "TSCP-ANALYZER-WRAPPERS": {
+    "onlyFiltersOutOtherCodes": [
+      {
+        "file": "src/analyze/wrappers.ts",
+        "symbol": "only"
+      },
+      {
+        "file": "src/testing/run-analyzer.ts",
+        "symbol": "runAnalyzer"
+      }
+    ],
+    "onlyKeepsListedCodes": [
+      {
+        "file": "src/analyze/wrappers.ts",
+        "symbol": "only"
+      },
+      {
+        "file": "src/testing/run-analyzer.ts",
+        "symbol": "runAnalyzer"
+      }
+    ],
+    "withIdOverridesExposedId": [
+      {
+        "file": "src/analyze/wrappers.ts",
+        "symbol": "withId"
+      }
+    ],
+    "withIdPropagatesToProducerId": [
+      {
+        "file": "src/analyze/wrappers.ts",
+        "symbol": "withId"
+      },
+      {
+        "file": "src/testing/run-analyzer.ts",
+        "symbol": "runAnalyzer"
+      }
+    ],
+    "withSeverityPreservesIdentityFields": [
+      {
+        "file": "src/analyze/wrappers.ts",
+        "symbol": "withSeverity"
+      },
+      {
+        "file": "src/testing/run-analyzer.ts",
+        "symbol": "runAnalyzer"
+      }
+    ],
+    "withSeverityRemapsAllSeverities": [
+      {
+        "file": "src/analyze/wrappers.ts",
+        "symbol": "withSeverity"
+      },
+      {
+        "file": "src/testing/run-analyzer.ts",
+        "symbol": "runAnalyzer"
+      }
+    ]
+  },
+  "TSCP-ATOMIC-COMMIT": {
+    "commitOnlyTouchesOutDir": [
+      {
+        "file": "src/virtfs/commit.ts",
+        "symbol": "commitTo"
+      }
+    ],
+    "commitProducesByteIdenticalOutDir": [
+      {
+        "file": "src/virtfs/commit.ts",
+        "symbol": "commitTo"
+      }
+    ],
+    "commitPurgesObsoleteOutputs": [
+      {
+        "file": "src/virtfs/commit.ts",
+        "symbol": "commitTo"
+      },
+      {
+        "file": "src/virtfs/commit.ts",
+        "symbol": "scanExistingGeneratedFiles"
+      }
+    ],
+    "commitWritesViaTmpThenRename": [
+      {
+        "file": "src/virtfs/commit.ts",
+        "symbol": "commitTo"
+      }
+    ],
+    "defaultNodeFsPortRoundTripsDiskOperations": [
+      {
+        "file": "src/ports/file-system.ts",
+        "symbol": "nodeFs"
+      }
+    ],
+    "failedRenameLeavesNoTmpFiles": [
+      {
+        "file": "src/virtfs/commit.ts",
+        "symbol": "commitTo"
+      }
+    ],
+    "propertyDiskUntouchedOnRunError": [
+      {
+        "file": "src/virtfs/internal.ts",
+        "symbol": "buildVirtFs"
+      }
+    ],
+    "propertyEmittedSetEqualsDiskAfterCommit": [
+      {
+        "file": "src/virtfs/commit.ts",
+        "symbol": "commitTo"
+      },
+      {
+        "file": "src/virtfs/commit.ts",
+        "symbol": "scanExistingGeneratedFiles"
+      }
+    ]
+  },
+  "TSCP-DECORATOR-DISCOVERY": {
+    "aliasedImportIsNotDiscovered": [
+      {
+        "file": "src/scan/find-decorated.ts",
+        "symbol": "findDecorated"
+      }
+    ],
+    "findsDecoratorOnAccessorDeclaration": [
+      {
+        "file": "src/scan/find-decorated.ts",
+        "symbol": "findDecorated"
+      }
+    ],
+    "findsDecoratorOnClassDeclaration": [
+      {
+        "file": "src/attributes.ts",
+        "symbol": "Generate"
+      },
+      {
+        "file": "src/scan/find-decorated.ts",
+        "symbol": "findDecorated"
+      },
+      {
+        "file": "src/scan/find-features.ts",
+        "symbol": "findFeatures"
+      }
+    ],
+    "findsDecoratorOnMethodDeclaration": [
+      {
+        "file": "src/scan/find-decorated.ts",
+        "symbol": "findDecorated"
+      }
+    ],
+    "findsDecoratorOnPropertyDeclaration": [
+      {
+        "file": "src/scan/find-decorated.ts",
+        "symbol": "findDecorated"
+      }
+    ],
+    "ignoresParameterDecoratorInV1": [
+      {
+        "file": "src/scan/find-decorated.ts",
+        "symbol": "findDecorated"
+      }
+    ],
+    "parsesObjectArgumentLiterally": [
+      {
+        "file": "src/scan/extract-fit-criteria.ts",
+        "symbol": "extractFitCriteria"
+      },
+      {
+        "file": "src/scan/find-decorated.ts",
+        "symbol": "findDecorated"
+      },
+      {
+        "file": "src/scan/parse-decorator-args.ts",
+        "symbol": "parseDecoratorArgs"
+      },
+      {
+        "file": "src/scan/scan-test-bindings.ts",
+        "symbol": "scanExistingBindings"
+      }
+    ],
+    "parsesStringAndNumberArguments": [
+      {
+        "file": "src/scan/find-decorated.ts",
+        "symbol": "findDecorated"
+      }
+    ],
+    "propertyStackingPreservesEachKind": [
+      {
+        "file": "src/scan/find-decorated.ts",
+        "symbol": "findDecorated"
+      }
+    ],
+    "propertyTargetFilterPartitionsHits": [
+      {
+        "file": "src/scan/find-decorated.ts",
+        "symbol": "findDecorated"
+      }
+    ],
+    "stackingReturnsAllHitsInSourceOrder": [
+      {
+        "file": "src/scan/find-decorated.ts",
+        "symbol": "findDecorated"
+      }
+    ],
+    "targetKindFilterHasNoLeakage": [
+      {
+        "file": "src/scan/find-decorated.ts",
+        "symbol": "findDecorated"
+      }
+    ]
+  },
+  "TSCP-DRIFT-DETECTION": {
+    "verifyDetectsHandEdit": [
+      {
+        "file": "src/emit/banner.ts",
+        "symbol": "withBanner"
+      },
+      {
+        "file": "src/emit/verify.ts",
+        "symbol": "verifyAgainstDisk"
+      },
+      {
+        "file": "src/virtfs/commit.ts",
+        "symbol": "commitTo"
+      }
+    ],
+    "verifyDetectsRegenerationDrift": [
+      {
+        "file": "src/emit/banner.ts",
+        "symbol": "wb"
+      },
+      {
+        "file": "src/emit/banner.ts",
+        "symbol": "withBanner"
+      },
+      {
+        "file": "src/emit/verify.ts",
+        "symbol": "verifyAgainstDisk"
+      }
+    ],
+    "verifyEmitsSG0010ForHandEdit": [
+      {
+        "file": "src/emit/banner.ts",
+        "symbol": "withBanner"
+      },
+      {
+        "file": "src/emit/verify.ts",
+        "symbol": "verifyAgainstDisk"
+      },
+      {
+        "file": "src/virtfs/commit.ts",
+        "symbol": "commitTo"
+      }
+    ],
+    "verifyEmitsSG0011ForRegenerationDrift": [
+      {
+        "file": "src/emit/banner.ts",
+        "symbol": "withBanner"
+      },
+      {
+        "file": "src/emit/verify.ts",
+        "symbol": "verifyAgainstDisk"
+      }
+    ],
+    "verifyExitsNonZeroOnMaxIterations": [
+      {
+        "file": "src/emit/verify.ts",
+        "symbol": "verifyAgainstDisk"
+      }
+    ],
+    "verifyExitsZeroOnCleanState": [
+      {
+        "file": "src/emit/banner.ts",
+        "symbol": "withBanner"
+      },
+      {
+        "file": "src/emit/verify.ts",
+        "symbol": "verifyAgainstDisk"
+      },
+      {
+        "file": "src/virtfs/commit.ts",
+        "symbol": "commitTo"
+      }
+    ],
+    "verifyNeverWritesToDisk": [
+      {
+        "file": "src/emit/banner.ts",
+        "symbol": "withBanner"
+      },
+      {
+        "file": "src/emit/verify.ts",
+        "symbol": "verifyAgainstDisk"
+      },
+      {
+        "file": "src/virtfs/commit.ts",
+        "symbol": "commitTo"
+      }
+    ]
+  },
+  "TSCP-FIXPOINT-TERMINATION": {
+    "failsWithSG0030WhenMaxIterationsReached": [
+      {
+        "file": "src/runner/run-fixpoint.ts",
+        "symbol": "runFixpoint"
+      }
+    ],
+    "generatorsInvokedInIdLexicographicOrder": [
+      {
+        "file": "src/runner/run-fixpoint.ts",
+        "symbol": "runFixpoint"
+      }
+    ],
+    "leavesDiskUntouchedOnError": [
+      {
+        "file": "src/runner/run-fixpoint.ts",
+        "symbol": "runFixpoint"
+      }
+    ],
+    "leavesDiskUntouchedOnNonConvergence": [
+      {
+        "file": "src/runner/run-fixpoint.ts",
+        "symbol": "runFixpoint"
+      }
+    ],
+    "propertyConvergenceForPureIdempotentGenerators": [
+      {
+        "file": "src/runner/run-fixpoint.ts",
+        "symbol": "runFixpoint"
+      }
+    ],
+    "reportsIterationCountInDiagnostics": [
+      {
+        "file": "src/runner/run-fixpoint.ts",
+        "symbol": "runFixpoint"
+      }
+    ],
+    "terminatesWhenNoGeneratorEmitsAnything": [
+      {
+        "file": "src/runner/run-fixpoint.ts",
+        "symbol": "runFixpoint"
+      }
+    ],
+    "twoConsecutiveRunsProduceIdenticalOutputs": [
+      {
+        "file": "src/emit/banner.ts",
+        "symbol": "extractBody"
+      },
+      {
+        "file": "src/emit/banner.ts",
+        "symbol": "wb"
+      },
+      {
+        "file": "src/generators/package-barrel.ts",
+        "symbol": "PackageBarrelGenerator"
+      },
+      {
+        "file": "src/generators/test-stub.ts",
+        "symbol": "TestStubGenerator"
+      },
+      {
+        "file": "src/runner/run-fixpoint.ts",
+        "symbol": "runFixpoint"
+      },
+      {
+        "file": "src/virtfs/internal.ts",
+        "symbol": "buildVirtFs"
+      }
+    ]
+  },
+  "TSCP-GENERATED-FILE-BANNER": {
+    "bannerCarriesProducerAndIteration": [
+      {
+        "file": "src/emit/banner.ts",
+        "symbol": "extractMeta"
+      },
+      {
+        "file": "src/emit/banner.ts",
+        "symbol": "withBanner"
+      }
+    ],
+    "bannerCarriesSha256ContentHash": [
+      {
+        "file": "src/emit/banner.ts",
+        "symbol": "extractMeta"
+      },
+      {
+        "file": "src/emit/banner.ts",
+        "symbol": "sha256Short"
+      },
+      {
+        "file": "src/emit/banner.ts",
+        "symbol": "withBanner"
+      }
+    ],
+    "bannerHasFourLineEnvelope": [
+      {
+        "file": "src/emit/banner.ts",
+        "symbol": "withBanner"
+      },
+      {
+        "file": "src/generators/templates/test-stub-templates.ts",
+        "symbol": "fastCheckTemplate"
+      },
+      {
+        "file": "src/generators/templates/test-stub-templates.ts",
+        "symbol": "isPropertyAcName"
+      },
+      {
+        "file": "src/generators/templates/test-stub-templates.ts",
+        "symbol": "throwTemplate"
+      }
+    ],
+    "bannerHasNoTimestampOrRandomness": [
+      {
+        "file": "src/emit/banner.ts",
+        "symbol": "withBanner"
+      }
+    ],
+    "bannerRoundTripPreservesBody": [
+      {
+        "file": "src/emit/banner.ts",
+        "symbol": "extractBody"
+      },
+      {
+        "file": "src/emit/banner.ts",
+        "symbol": "withBanner"
+      }
+    ],
+    "contentHashSelfConsistent": [
+      {
+        "file": "src/emit/banner.ts",
+        "symbol": "verifyBanneredHash"
+      },
+      {
+        "file": "src/emit/banner.ts",
+        "symbol": "withBanner"
+      }
+    ],
+    "propertyBannerDeterministic": [
+      {
+        "file": "src/emit/banner.ts",
+        "symbol": "sha256Short"
+      },
+      {
+        "file": "src/emit/banner.ts",
+        "symbol": "withBanner"
+      }
+    ],
+    "propertyBannerRoundTrip": [
+      {
+        "file": "src/emit/banner.ts",
+        "symbol": "extractBody"
+      },
+      {
+        "file": "src/emit/banner.ts",
+        "symbol": "withBanner"
+      }
+    ]
+  },
+  "TSCP-INCREMENTAL-DELTA": {
+    "deltaEmptyAtIterationZero": [
+      {
+        "file": "src/runner/run-fixpoint.ts",
+        "symbol": "runFixpoint"
+      }
+    ],
+    "deltaLastIterationMatchesPriorEmissions": [
+      {
+        "file": "src/runner/run-fixpoint.ts",
+        "symbol": "runFixpoint"
+      }
+    ],
+    "deltaSinceStartIsCumulative": [
+      {
+        "file": "src/runner/run-fixpoint.ts",
+        "symbol": "runFixpoint"
+      }
+    ],
+    "filterEmittedSinceReturnsExpectedSlice": [
+      {
+        "file": "src/runner/run-fixpoint.ts",
+        "symbol": "runFixpoint"
+      },
+      {
+        "file": "src/virtfs/internal.ts",
+        "symbol": "buildVirtFs"
+      }
+    ],
+    "propertyDeltaConsistentWithJournal": [
+      {
+        "file": "src/runner/run-fixpoint.ts",
+        "symbol": "runFixpoint"
+      }
+    ]
+  },
+  "TSCP-STRICTLY-ADDITIVE-EMISSION": {
+    "propertyDiskOutsideOutDirByteIdentical": [
+      {
+        "file": "src/virtfs/internal.ts",
+        "symbol": "buildVirtFs"
+      }
+    ],
+    "propertyRejectsPathTraversal": [
+      {
+        "file": "src/virtfs/internal.ts",
+        "symbol": "buildVirtFs"
+      }
+    ],
+    "rejectionLeavesVirtFsUnchanged": [
+      {
+        "file": "src/virtfs/internal.ts",
+        "symbol": "buildVirtFs"
+      }
+    ],
+    "rejectsAbsolutePath": [
+      {
+        "file": "src/virtfs/internal.ts",
+        "symbol": "buildVirtFs"
+      },
+      {
+        "file": "src/virtfs/path-validation.ts",
+        "symbol": "validateRelPath"
+      }
+    ],
+    "rejectsNormalizedTraversal": [
+      {
+        "file": "src/virtfs/internal.ts",
+        "symbol": "buildVirtFs"
+      },
+      {
+        "file": "src/virtfs/path-validation.ts",
+        "symbol": "validateRelPath"
+      }
+    ],
+    "rejectsRelativeParentEscape": [
+      {
+        "file": "src/virtfs/internal.ts",
+        "symbol": "buildVirtFs"
+      },
+      {
+        "file": "src/virtfs/path-validation.ts",
+        "symbol": "validateRelPath"
+      }
+    ],
+    "rejectsWindowsAbsolutePath": [
+      {
+        "file": "src/virtfs/internal.ts",
+        "symbol": "buildVirtFs"
+      },
+      {
+        "file": "src/virtfs/path-validation.ts",
+        "symbol": "validateRelPath"
+      }
+    ],
+    "userSrcUntouchedAfterRun": [
+      {
+        "file": "src/virtfs/internal.ts",
+        "symbol": "buildVirtFs"
+      }
+    ],
+    "userSrcUntouchedAfterRunError": [
+      {
+        "file": "src/virtfs/internal.ts",
+        "symbol": "buildVirtFs"
+      }
+    ]
+  },
+  "TSCP-VIRTUAL-FS-ISOLATION": {
+    "addSourceIsIdempotent": [
+      {
+        "file": "src/virtfs/internal.ts",
+        "symbol": "buildVirtFs"
+      }
+    ],
+    "divergenceLeavesVirtFsUnchanged": [
+      {
+        "file": "src/virtfs/internal.ts",
+        "symbol": "buildVirtFs"
+      }
+    ],
+    "identicalContentsAreNoop": [
+      {
+        "file": "src/virtfs/internal.ts",
+        "symbol": "buildVirtFs"
+      }
+    ],
+    "midIterationThrowLeavesDiskUntouched": [
+      {
+        "file": "src/virtfs/create.ts",
+        "symbol": "createVirtFs"
+      }
+    ],
+    "noWriteUntilCommitPhase": [
+      {
+        "file": "src/virtfs/internal.ts",
+        "symbol": "buildVirtFs"
+      }
+    ],
+    "projectIsConstructedWithUseInMemoryFileSystem": [
+      {
+        "file": "src/virtfs/create.ts",
+        "symbol": "createVirtFs"
+      },
+      {
+        "file": "src/virtfs/internal.ts",
+        "symbol": "buildVirtFs"
+      }
+    ],
+    "sameProducerCanUpdateOwnEmission": [
+      {
+        "file": "src/virtfs/internal.ts",
+        "symbol": "buildVirtFs"
+      }
+    ],
+    "twoGeneratorsSamePathDifferentContentsTriggersSG0020": [
+      {
+        "file": "src/virtfs/internal.ts",
+        "symbol": "buildVirtFs"
+      }
+    ]
+  },
+  "TSCP-WATCH-MODE": {
+    "acceptsRegularSourceFile": [
+      {
+        "file": "src/watch/should-ignore.ts",
+        "symbol": "shouldIgnore"
+      }
+    ],
+    "concurrentNotifyQueuesExactlyOneAdditionalRun": [
+      {
+        "file": "src/watch/coalescer.ts",
+        "symbol": "Coalescer"
+      }
+    ],
+    "debounceCollapsesBurstToSingleRun": [
+      {
+        "file": "src/watch/coalescer.ts",
+        "symbol": "Coalescer"
+      }
+    ],
+    "doubleStarSpansZeroOrMoreSegments": [
+      {
+        "file": "src/watch/glob-watch.ts",
+        "symbol": "globToRegExp"
+      }
+    ],
+    "eventPathsAreScreenedAgainstPatterns": [
+      {
+        "file": "src/watch/glob-watch.ts",
+        "symbol": "matchesAnyGlob"
+      }
+    ],
+    "globBaseDirStopsAtFirstMagicSegment": [
+      {
+        "file": "src/watch/glob-watch.ts",
+        "symbol": "globBaseDir"
+      }
+    ],
+    "ignoresDist": [
+      {
+        "file": "src/watch/should-ignore.ts",
+        "symbol": "shouldIgnore"
+      }
+    ],
+    "ignoresDotGit": [
+      {
+        "file": "src/watch/should-ignore.ts",
+        "symbol": "shouldIgnore"
+      }
+    ],
+    "ignoresGeneratedFilesByMarker": [
+      {
+        "file": "src/watch/should-ignore.ts",
+        "symbol": "shouldIgnore"
+      }
+    ],
+    "ignoresNodeModules": [
+      {
+        "file": "src/watch/should-ignore.ts",
+        "symbol": "shouldIgnore"
+      }
+    ],
+    "ignoresOutDirChildren": [
+      {
+        "file": "src/watch/should-ignore.ts",
+        "symbol": "shouldIgnore"
+      }
+    ],
+    "ignoresTestResults": [
+      {
+        "file": "src/watch/should-ignore.ts",
+        "symbol": "shouldIgnore"
+      }
+    ],
+    "runNowTriggersImmediateInitialRun": [
+      {
+        "file": "src/watch/coalescer.ts",
+        "symbol": "Coalescer"
+      }
+    ],
+    "singleStarStaysWithinOneSegment": [
+      {
+        "file": "src/watch/glob-watch.ts",
+        "symbol": "globToRegExp"
+      }
+    ],
+    "watchRootsFoldNestedDirsIntoAncestor": [
+      {
+        "file": "src/watch/glob-watch.ts",
+        "symbol": "watchRootsFor"
+      }
+    ]
+  }
+}

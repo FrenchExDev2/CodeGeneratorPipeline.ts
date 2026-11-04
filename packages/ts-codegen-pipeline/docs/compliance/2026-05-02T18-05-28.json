@@ -1,0 +1,2114 @@
+{
+  "timestamp": "2026-05-02T18:05:28.230Z",
+  "features": [
+    {
+      "id": "TSCP-DECORATOR-DISCOVERY",
+      "title": "@Generate is found by identifier name; multi-stacking and AST-target filtering are first-class",
+      "priority": "high",
+      "enabled": true,
+      "sourceFiles": [],
+      "acs": [
+        {
+          "method": "findsDecoratorOnClassDeclaration",
+          "tests": [
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "decoratorFactoryProducesNoopFunction",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/scan.test.ts",
+              "name": "findsOnClass",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "findsDecoratorOnMethodDeclaration",
+          "tests": [
+            {
+              "file": "test/unit/scan.test.ts",
+              "name": "findsOnMethod",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "findsDecoratorOnPropertyDeclaration",
+          "tests": [
+            {
+              "file": "test/unit/scan.test.ts",
+              "name": "findsOnProperty",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "findsDecoratorOnAccessorDeclaration",
+          "tests": [
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "findsOnSetAccessor",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/scan.test.ts",
+              "name": "findsOnAccessor",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "ignoresParameterDecoratorInV1",
+          "tests": [
+            {
+              "file": "test/unit/scan.test.ts",
+              "name": "ignoresParameter",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "stackingReturnsAllHitsInSourceOrder",
+          "tests": [
+            {
+              "file": "test/unit/scan.test.ts",
+              "name": "stackingPreservesOrder",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "targetKindFilterHasNoLeakage",
+          "tests": [
+            {
+              "file": "test/unit/scan.test.ts",
+              "name": "targetKindFilterIsClean",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "aliasedImportIsNotDiscovered",
+          "tests": [
+            {
+              "file": "test/unit/scan.test.ts",
+              "name": "aliasedNotDiscovered",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "parsesObjectArgumentLiterally",
+          "tests": [
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "arrayArgumentParsesLiterally",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "shorthandPropertyBailsOut",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "bailsOnNonLiteralObjectField",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "bailsOnNonLiteralArrayElement",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "bareDecoratorWithoutParensReturnsNull",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "decoratorFactoryWithEmptyArgsReturnsNull",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "arrayAtTopLevelIsNotAcceptedAsArgs",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/scan.test.ts",
+              "name": "parsesObjectArg",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "parsesStringAndNumberArguments",
+          "tests": [
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "unknownNodeReturnsUndefined",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "rejectsNonStringKind",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "prefixUnaryMinusOnNonNumberFallsThrough",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/scan.test.ts",
+              "name": "parsesPrimitiveArgs",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "propertyStackingPreservesEachKind",
+          "tests": [
+            {
+              "file": "test/unit/fuzz.test.ts",
+              "name": "p9StackingPreserved",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "propertyTargetFilterPartitionsHits",
+          "tests": [
+            {
+              "file": "test/unit/fuzz.test.ts",
+              "name": "p10TargetFilterPartitions",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        }
+      ],
+      "coveredCount": 12,
+      "totalCount": 12,
+      "percentage": 100,
+      "runtimeCoverage": {
+        "status": "ok",
+        "declared": 0,
+        "found": 0,
+        "missing": [],
+        "minLinesPct": null
+      },
+      "bindings": {
+        "status": "bound",
+        "totalAcs": 12,
+        "boundAcs": 12,
+        "symbols": [
+          {
+            "ac": "findsDecoratorOnClassDeclaration",
+            "file": "src/attributes.js.ts",
+            "symbol": "Generate"
+          },
+          {
+            "ac": "findsDecoratorOnClassDeclaration",
+            "file": "src/scan/find-decorated.js.ts",
+            "symbol": "findDecorated"
+          },
+          {
+            "ac": "findsDecoratorOnMethodDeclaration",
+            "file": "src/scan/find-decorated.js.ts",
+            "symbol": "findDecorated"
+          },
+          {
+            "ac": "findsDecoratorOnPropertyDeclaration",
+            "file": "src/scan/find-decorated.js.ts",
+            "symbol": "findDecorated"
+          },
+          {
+            "ac": "findsDecoratorOnAccessorDeclaration",
+            "file": "src/scan/find-decorated.js.ts",
+            "symbol": "findDecorated"
+          },
+          {
+            "ac": "ignoresParameterDecoratorInV1",
+            "file": "src/scan/find-decorated.js.ts",
+            "symbol": "findDecorated"
+          },
+          {
+            "ac": "stackingReturnsAllHitsInSourceOrder",
+            "file": "src/scan/find-decorated.js.ts",
+            "symbol": "findDecorated"
+          },
+          {
+            "ac": "targetKindFilterHasNoLeakage",
+            "file": "src/scan/find-decorated.js.ts",
+            "symbol": "findDecorated"
+          },
+          {
+            "ac": "aliasedImportIsNotDiscovered",
+            "file": "src/scan/find-decorated.js.ts",
+            "symbol": "findDecorated"
+          },
+          {
+            "ac": "parsesObjectArgumentLiterally",
+            "file": "src/scan/find-decorated.js.ts",
+            "symbol": "findDecorated"
+          },
+          {
+            "ac": "parsesStringAndNumberArguments",
+            "file": "src/scan/find-decorated.js.ts",
+            "symbol": "findDecorated"
+          },
+          {
+            "ac": "propertyStackingPreservesEachKind",
+            "file": "src/scan/find-decorated.js.ts",
+            "symbol": "findDecorated"
+          },
+          {
+            "ac": "propertyTargetFilterPartitionsHits",
+            "file": "src/scan/find-decorated.js.ts",
+            "symbol": "findDecorated"
+          }
+        ]
+      },
+      "satisfies": [
+        "REQ-TSCP-DECORATOR-BY-NAME"
+      ]
+    },
+    {
+      "id": "TSCP-ATOMIC-COMMIT",
+      "title": "At fixpoint, commit virtFS to disk atomically per file with stale-output purge",
+      "priority": "high",
+      "enabled": true,
+      "sourceFiles": [],
+      "acs": [
+        {
+          "method": "commitProducesByteIdenticalOutDir",
+          "tests": [
+            {
+              "file": "test/unit/commit.test.ts",
+              "name": "async byteIdentical",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "commitWritesViaTmpThenRename",
+          "tests": [
+            {
+              "file": "test/unit/commit.test.ts",
+              "name": "async writesViaTmpThenRename",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "commitPurgesObsoleteOutputs",
+          "tests": [
+            {
+              "file": "test/unit/commit.test.ts",
+              "name": "async purgesObsolete",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "async scanHandlesNestedDirAndUnreadable",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "async purgeUnlinkOnAlreadyMissing",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "async scanWithFileAsRootHitsReaddirCatch",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/file-system-stub.test.ts",
+              "name": "async unlinkOnPurgeFailsIsSwallowed",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/file-system-stub.test.ts",
+              "name": "async statFailureSkipsEntry",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "failedRenameLeavesNoTmpFiles",
+          "tests": [
+            {
+              "file": "test/unit/commit.test.ts",
+              "name": "async failedRenameNoTmps",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "async writeFilePhase1Failure",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "async firstWritesSuccessSecondFailsCleanupTmps",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/file-system-stub.test.ts",
+              "name": "async secondWriteFailsCleanupsFirstTmp",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/file-system-stub.test.ts",
+              "name": "async renameFailsAfterFirstSuccessCleanupRemainingTmps",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "commitOnlyTouchesOutDir",
+          "tests": [
+            {
+              "file": "test/unit/commit.test.ts",
+              "name": "async onlyTouchesOutDir",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "propertyEmittedSetEqualsDiskAfterCommit",
+          "tests": [
+            {
+              "file": "test/unit/commit.test.ts",
+              "name": "async emittedSetEqualsDisk",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/fuzz.test.ts",
+              "name": "async p7CommitEqualsDisk",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "propertyDiskUntouchedOnRunError",
+          "tests": [
+            {
+              "file": "test/unit/commit.test.ts",
+              "name": "async diskUntouchedOnError",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/fuzz.test.ts",
+              "name": "async p8DiskUntouchedOnError",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        }
+      ],
+      "coveredCount": 7,
+      "totalCount": 7,
+      "percentage": 100,
+      "runtimeCoverage": {
+        "status": "ok",
+        "declared": 0,
+        "found": 0,
+        "missing": [],
+        "minLinesPct": null
+      },
+      "bindings": {
+        "status": "bound",
+        "totalAcs": 7,
+        "boundAcs": 7,
+        "symbols": [
+          {
+            "ac": "commitProducesByteIdenticalOutDir",
+            "file": "src/virtfs/commit.js.ts",
+            "symbol": "commitTo"
+          },
+          {
+            "ac": "commitWritesViaTmpThenRename",
+            "file": "src/virtfs/commit.js.ts",
+            "symbol": "commitTo"
+          },
+          {
+            "ac": "commitPurgesObsoleteOutputs",
+            "file": "src/virtfs/commit.js.ts",
+            "symbol": "commitTo"
+          },
+          {
+            "ac": "commitPurgesObsoleteOutputs",
+            "file": "src/virtfs/commit.js.ts",
+            "symbol": "scanExistingGeneratedFiles"
+          },
+          {
+            "ac": "failedRenameLeavesNoTmpFiles",
+            "file": "src/virtfs/commit.js.ts",
+            "symbol": "commitTo"
+          },
+          {
+            "ac": "commitOnlyTouchesOutDir",
+            "file": "src/virtfs/commit.js.ts",
+            "symbol": "commitTo"
+          },
+          {
+            "ac": "propertyEmittedSetEqualsDiskAfterCommit",
+            "file": "src/virtfs/commit.js.ts",
+            "symbol": "commitTo"
+          },
+          {
+            "ac": "propertyEmittedSetEqualsDiskAfterCommit",
+            "file": "src/virtfs/commit.js.ts",
+            "symbol": "scanExistingGeneratedFiles"
+          },
+          {
+            "ac": "propertyDiskUntouchedOnRunError",
+            "file": "src/virtfs/internal.js.ts",
+            "symbol": "buildVirtFs"
+          }
+        ]
+      },
+      "satisfies": [
+        "REQ-TSCP-ATOMIC-COMMIT",
+        "REQ-TSCP-STRICTLY-ADDITIVE-EMISSION"
+      ]
+    },
+    {
+      "id": "TSCP-DRIFT-DETECTION",
+      "title": "`sourcegen verify` detects hand-edits and regeneration drift via banner contentHash",
+      "priority": "high",
+      "enabled": true,
+      "sourceFiles": [],
+      "acs": [
+        {
+          "method": "verifyExitsZeroOnCleanState",
+          "tests": [
+            {
+              "file": "test/unit/verify.test.ts",
+              "name": "async cleanState",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "verifyDetectsHandEdit",
+          "tests": [
+            {
+              "file": "test/unit/verify.test.ts",
+              "name": "async detectsHandEdit",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "verifyEmitsSG0010ForHandEdit",
+          "tests": [
+            {
+              "file": "test/unit/verify.test.ts",
+              "name": "async sg0010Code",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "verifyDetectsRegenerationDrift",
+          "tests": [
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "async virtFsHasButDiskMissing",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/verify.test.ts",
+              "name": "async detectsRegenDrift",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "verifyEmitsSG0011ForRegenerationDrift",
+          "tests": [
+            {
+              "file": "test/unit/verify.test.ts",
+              "name": "async sg0011Code",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "verifyNeverWritesToDisk",
+          "tests": [
+            {
+              "file": "test/unit/verify.test.ts",
+              "name": "async neverWrites",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "verifyExitsNonZeroOnMaxIterations",
+          "tests": [
+            {
+              "file": "test/unit/verify.test.ts",
+              "name": "async maxIterationsViaRunner",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        }
+      ],
+      "coveredCount": 7,
+      "totalCount": 7,
+      "percentage": 100,
+      "runtimeCoverage": {
+        "status": "ok",
+        "declared": 0,
+        "found": 0,
+        "missing": [],
+        "minLinesPct": null
+      },
+      "bindings": {
+        "status": "bound",
+        "totalAcs": 7,
+        "boundAcs": 7,
+        "symbols": [
+          {
+            "ac": "verifyExitsZeroOnCleanState",
+            "file": "src/emit/banner.js.ts",
+            "symbol": "withBanner"
+          },
+          {
+            "ac": "verifyExitsZeroOnCleanState",
+            "file": "src/emit/verify.js.ts",
+            "symbol": "verifyAgainstDisk"
+          },
+          {
+            "ac": "verifyExitsZeroOnCleanState",
+            "file": "src/virtfs/commit.js.ts",
+            "symbol": "commitTo"
+          },
+          {
+            "ac": "verifyDetectsHandEdit",
+            "file": "src/emit/banner.js.ts",
+            "symbol": "withBanner"
+          },
+          {
+            "ac": "verifyDetectsHandEdit",
+            "file": "src/emit/verify.js.ts",
+            "symbol": "verifyAgainstDisk"
+          },
+          {
+            "ac": "verifyDetectsHandEdit",
+            "file": "src/virtfs/commit.js.ts",
+            "symbol": "commitTo"
+          },
+          {
+            "ac": "verifyEmitsSG0010ForHandEdit",
+            "file": "src/emit/banner.js.ts",
+            "symbol": "withBanner"
+          },
+          {
+            "ac": "verifyEmitsSG0010ForHandEdit",
+            "file": "src/emit/verify.js.ts",
+            "symbol": "verifyAgainstDisk"
+          },
+          {
+            "ac": "verifyEmitsSG0010ForHandEdit",
+            "file": "src/virtfs/commit.js.ts",
+            "symbol": "commitTo"
+          },
+          {
+            "ac": "verifyDetectsRegenerationDrift",
+            "file": "src/emit/banner.js.ts",
+            "symbol": "wb"
+          },
+          {
+            "ac": "verifyDetectsRegenerationDrift",
+            "file": "src/emit/banner.js.ts",
+            "symbol": "withBanner"
+          },
+          {
+            "ac": "verifyDetectsRegenerationDrift",
+            "file": "src/emit/verify.js.ts",
+            "symbol": "verifyAgainstDisk"
+          },
+          {
+            "ac": "verifyEmitsSG0011ForRegenerationDrift",
+            "file": "src/emit/banner.js.ts",
+            "symbol": "withBanner"
+          },
+          {
+            "ac": "verifyEmitsSG0011ForRegenerationDrift",
+            "file": "src/emit/verify.js.ts",
+            "symbol": "verifyAgainstDisk"
+          },
+          {
+            "ac": "verifyNeverWritesToDisk",
+            "file": "src/emit/banner.js.ts",
+            "symbol": "withBanner"
+          },
+          {
+            "ac": "verifyNeverWritesToDisk",
+            "file": "src/emit/verify.js.ts",
+            "symbol": "verifyAgainstDisk"
+          },
+          {
+            "ac": "verifyNeverWritesToDisk",
+            "file": "src/virtfs/commit.js.ts",
+            "symbol": "commitTo"
+          },
+          {
+            "ac": "verifyExitsNonZeroOnMaxIterations",
+            "file": "src/emit/verify.js.ts",
+            "symbol": "verifyAgainstDisk"
+          }
+        ]
+      },
+      "satisfies": [
+        "REQ-TSCP-WRITE-ONCE"
+      ]
+    },
+    {
+      "id": "TSCP-GENERATED-FILE-BANNER",
+      "title": "Every emitted file carries a banner with producer / iteration / SHA-256 contentHash",
+      "priority": "high",
+      "enabled": true,
+      "sourceFiles": [],
+      "acs": [
+        {
+          "method": "bannerHasFourLineEnvelope",
+          "tests": [
+            {
+              "file": "test/unit/emit.test.ts",
+              "name": "fourLineEnvelope",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "bannerCarriesProducerAndIteration",
+          "tests": [
+            {
+              "file": "test/unit/emit.test.ts",
+              "name": "carriesProducerIteration",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "bannerCarriesSha256ContentHash",
+          "tests": [
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "extractMetaRejectsBadInput",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/emit.test.ts",
+              "name": "carriesSha256",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "bannerHasNoTimestampOrRandomness",
+          "tests": [
+            {
+              "file": "test/unit/emit.test.ts",
+              "name": "noTimestamp",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "bannerRoundTripPreservesBody",
+          "tests": [
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "extractBodyRejectsBadInput",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/emit.test.ts",
+              "name": "roundTripPreservesBody",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "contentHashSelfConsistent",
+          "tests": [
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "verifyBanneredHashCatch",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/emit.test.ts",
+              "name": "hashSelfConsistent",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "propertyBannerRoundTrip",
+          "tests": [
+            {
+              "file": "test/unit/fuzz.test.ts",
+              "name": "p3Roundtrip",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "propertyBannerDeterministic",
+          "tests": [
+            {
+              "file": "test/unit/fuzz.test.ts",
+              "name": "p4Determinism",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        }
+      ],
+      "coveredCount": 8,
+      "totalCount": 8,
+      "percentage": 100,
+      "runtimeCoverage": {
+        "status": "ok",
+        "declared": 0,
+        "found": 0,
+        "missing": [],
+        "minLinesPct": null
+      },
+      "bindings": {
+        "status": "bound",
+        "totalAcs": 8,
+        "boundAcs": 8,
+        "symbols": [
+          {
+            "ac": "bannerHasFourLineEnvelope",
+            "file": "src/emit/banner.js.ts",
+            "symbol": "withBanner"
+          },
+          {
+            "ac": "bannerCarriesProducerAndIteration",
+            "file": "src/emit/banner.js.ts",
+            "symbol": "extractMeta"
+          },
+          {
+            "ac": "bannerCarriesProducerAndIteration",
+            "file": "src/emit/banner.js.ts",
+            "symbol": "withBanner"
+          },
+          {
+            "ac": "bannerCarriesSha256ContentHash",
+            "file": "src/emit/banner.js.ts",
+            "symbol": "extractMeta"
+          },
+          {
+            "ac": "bannerCarriesSha256ContentHash",
+            "file": "src/emit/banner.js.ts",
+            "symbol": "sha256Short"
+          },
+          {
+            "ac": "bannerCarriesSha256ContentHash",
+            "file": "src/emit/banner.js.ts",
+            "symbol": "withBanner"
+          },
+          {
+            "ac": "bannerHasNoTimestampOrRandomness",
+            "file": "src/emit/banner.js.ts",
+            "symbol": "withBanner"
+          },
+          {
+            "ac": "bannerRoundTripPreservesBody",
+            "file": "src/emit/banner.js.ts",
+            "symbol": "extractBody"
+          },
+          {
+            "ac": "bannerRoundTripPreservesBody",
+            "file": "src/emit/banner.js.ts",
+            "symbol": "withBanner"
+          },
+          {
+            "ac": "contentHashSelfConsistent",
+            "file": "src/emit/banner.js.ts",
+            "symbol": "verifyBanneredHash"
+          },
+          {
+            "ac": "contentHashSelfConsistent",
+            "file": "src/emit/banner.js.ts",
+            "symbol": "withBanner"
+          },
+          {
+            "ac": "propertyBannerRoundTrip",
+            "file": "src/emit/banner.js.ts",
+            "symbol": "extractBody"
+          },
+          {
+            "ac": "propertyBannerRoundTrip",
+            "file": "src/emit/banner.js.ts",
+            "symbol": "withBanner"
+          },
+          {
+            "ac": "propertyBannerDeterministic",
+            "file": "src/emit/banner.js.ts",
+            "symbol": "sha256Short"
+          },
+          {
+            "ac": "propertyBannerDeterministic",
+            "file": "src/emit/banner.js.ts",
+            "symbol": "withBanner"
+          }
+        ]
+      },
+      "satisfies": [
+        "REQ-TSCP-WRITE-ONCE",
+        "REQ-TSCP-DETERMINISTIC-ORDERING"
+      ]
+    },
+    {
+      "id": "TSCP-INCREMENTAL-DELTA",
+      "title": "GenerationContext.delta exposes a read-only view of recent virtFS activity for incremental processing",
+      "priority": "medium",
+      "enabled": true,
+      "sourceFiles": [],
+      "acs": [
+        {
+          "method": "deltaEmptyAtIterationZero",
+          "tests": [
+            {
+              "file": "test/unit/runner.test.ts",
+              "name": "async deltaEmptyAt0",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "deltaLastIterationMatchesPriorEmissions",
+          "tests": [
+            {
+              "file": "test/unit/runner.test.ts",
+              "name": "async deltaLastIterMatches",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "deltaSinceStartIsCumulative",
+          "tests": [
+            {
+              "file": "test/unit/runner.test.ts",
+              "name": "async sinceStartCumulative",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "filterEmittedSinceReturnsExpectedSlice",
+          "tests": [
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "filterEmittedSinceCallback",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/runner.test.ts",
+              "name": "async filterReturnsSlice",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "propertyDeltaConsistentWithJournal",
+          "tests": [
+            {
+              "file": "test/unit/runner.test.ts",
+              "name": "async deltaConsistentWithJournal",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        }
+      ],
+      "coveredCount": 5,
+      "totalCount": 5,
+      "percentage": 100,
+      "runtimeCoverage": {
+        "status": "ok",
+        "declared": 0,
+        "found": 0,
+        "missing": [],
+        "minLinesPct": null
+      },
+      "bindings": {
+        "status": "bound",
+        "totalAcs": 5,
+        "boundAcs": 5,
+        "symbols": [
+          {
+            "ac": "deltaEmptyAtIterationZero",
+            "file": "src/runner/run-fixpoint.js.ts",
+            "symbol": "runFixpoint"
+          },
+          {
+            "ac": "deltaLastIterationMatchesPriorEmissions",
+            "file": "src/runner/run-fixpoint.js.ts",
+            "symbol": "runFixpoint"
+          },
+          {
+            "ac": "deltaSinceStartIsCumulative",
+            "file": "src/runner/run-fixpoint.js.ts",
+            "symbol": "runFixpoint"
+          },
+          {
+            "ac": "filterEmittedSinceReturnsExpectedSlice",
+            "file": "src/runner/run-fixpoint.js.ts",
+            "symbol": "runFixpoint"
+          },
+          {
+            "ac": "filterEmittedSinceReturnsExpectedSlice",
+            "file": "src/virtfs/internal.js.ts",
+            "symbol": "buildVirtFs"
+          },
+          {
+            "ac": "propertyDeltaConsistentWithJournal",
+            "file": "src/runner/run-fixpoint.js.ts",
+            "symbol": "runFixpoint"
+          }
+        ]
+      },
+      "satisfies": [
+        "REQ-TSCP-INCREMENTAL-DELTA-VISIBILITY"
+      ]
+    },
+    {
+      "id": "TSCP-FIXPOINT-TERMINATION",
+      "title": "Runner converges to a fixpoint or fails at MAX_ITERATIONS, with deterministic ordering",
+      "priority": "high",
+      "enabled": true,
+      "sourceFiles": [],
+      "acs": [
+        {
+          "method": "terminatesWhenNoGeneratorEmitsAnything",
+          "tests": [
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "async generatorCallsDefaultLogger",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/runner.test.ts",
+              "name": "async terminates",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "reportsIterationCountInDiagnostics",
+          "tests": [
+            {
+              "file": "test/unit/runner.test.ts",
+              "name": "async reportsIterations",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "failsWithSG0030WhenMaxIterationsReached",
+          "tests": [
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "async maxIterationsTriggersSG0030",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/runner.test.ts",
+              "name": "async failsOnMaxIterations",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "leavesDiskUntouchedOnNonConvergence",
+          "tests": [
+            {
+              "file": "test/unit/runner.test.ts",
+              "name": "async noCommitOnNonConvergence",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "leavesDiskUntouchedOnError",
+          "tests": [
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "async stringThrowGetsStringified",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/runner.test.ts",
+              "name": "async noCommitOnError",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "twoConsecutiveRunsProduceIdenticalOutputs",
+          "tests": [
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "async verifyOnlyAfterCommit",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/runner.test.ts",
+              "name": "async twoRunsIdentical",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "generatorsInvokedInIdLexicographicOrder",
+          "tests": [
+            {
+              "file": "test/unit/runner.test.ts",
+              "name": "async lexicographicOrder",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "propertyConvergenceForPureIdempotentGenerators",
+          "tests": [
+            {
+              "file": "test/unit/runner.test.ts",
+              "name": "async propertyConvergence",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        }
+      ],
+      "coveredCount": 8,
+      "totalCount": 8,
+      "percentage": 100,
+      "runtimeCoverage": {
+        "status": "ok",
+        "declared": 0,
+        "found": 0,
+        "missing": [],
+        "minLinesPct": null
+      },
+      "bindings": {
+        "status": "bound",
+        "totalAcs": 8,
+        "boundAcs": 8,
+        "symbols": [
+          {
+            "ac": "terminatesWhenNoGeneratorEmitsAnything",
+            "file": "src/runner/run-fixpoint.js.ts",
+            "symbol": "runFixpoint"
+          },
+          {
+            "ac": "reportsIterationCountInDiagnostics",
+            "file": "src/runner/run-fixpoint.js.ts",
+            "symbol": "runFixpoint"
+          },
+          {
+            "ac": "failsWithSG0030WhenMaxIterationsReached",
+            "file": "src/runner/run-fixpoint.js.ts",
+            "symbol": "runFixpoint"
+          },
+          {
+            "ac": "leavesDiskUntouchedOnNonConvergence",
+            "file": "src/runner/run-fixpoint.js.ts",
+            "symbol": "runFixpoint"
+          },
+          {
+            "ac": "leavesDiskUntouchedOnError",
+            "file": "src/runner/run-fixpoint.js.ts",
+            "symbol": "runFixpoint"
+          },
+          {
+            "ac": "twoConsecutiveRunsProduceIdenticalOutputs",
+            "file": "src/emit/banner.js.ts",
+            "symbol": "wb"
+          },
+          {
+            "ac": "twoConsecutiveRunsProduceIdenticalOutputs",
+            "file": "src/runner/run-fixpoint.js.ts",
+            "symbol": "runFixpoint"
+          },
+          {
+            "ac": "generatorsInvokedInIdLexicographicOrder",
+            "file": "src/runner/run-fixpoint.js.ts",
+            "symbol": "runFixpoint"
+          },
+          {
+            "ac": "propertyConvergenceForPureIdempotentGenerators",
+            "file": "src/runner/run-fixpoint.js.ts",
+            "symbol": "runFixpoint"
+          }
+        ]
+      },
+      "satisfies": [
+        "REQ-TSCP-FIXPOINT-LOOP",
+        "REQ-TSCP-ITERATION-CAP",
+        "REQ-TSCP-DETERMINISTIC-ORDERING"
+      ]
+    },
+    {
+      "id": "TSCP-VIRTUAL-FS-ISOLATION",
+      "title": "VirtFs isolates the disk during iterations and enforces idempotent / divergence-aware addSource",
+      "priority": "high",
+      "enabled": true,
+      "sourceFiles": [],
+      "acs": [
+        {
+          "method": "midIterationThrowLeavesDiskUntouched",
+          "tests": [
+            {
+              "file": "test/unit/virtfs.test.ts",
+              "name": "async midIterationThrowLeavesDiskUntouched",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "noWriteUntilCommitPhase",
+          "tests": [
+            {
+              "file": "test/unit/virtfs.test.ts",
+              "name": "noWriteUntilCommit",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "projectIsConstructedWithUseInMemoryFileSystem",
+          "tests": [
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "readFromProjectThenError",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "async rejectsMissingTsconfig",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "async resolvesRelativePaths",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "async outDirGeneratedFilesNotSeeded",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "async outDirEndingInSepIsAccepted",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/file-system-stub.test.ts",
+              "name": "async fileFromTsconfigButNotOnDiskIsSkipped",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/virtfs.test.ts",
+              "name": "async projectIsInMemory",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "addSourceIsIdempotent",
+          "tests": [
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "listEmittedReturnsFrozenJournal",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "hasReturnsTrueOnEmittedFileWithoutHittingProject",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/fuzz.test.ts",
+              "name": "p1Idempotence",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/virtfs.test.ts",
+              "name": "addSourceIdempotent",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "sameProducerCanUpdateOwnEmission",
+          "tests": [
+            {
+              "file": "test/unit/virtfs.test.ts",
+              "name": "sameProducerUpdate",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "identicalContentsAreNoop",
+          "tests": [
+            {
+              "file": "test/unit/virtfs.test.ts",
+              "name": "identicalContents",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "twoGeneratorsSamePathDifferentContentsTriggersSG0020",
+          "tests": [
+            {
+              "file": "test/unit/fuzz.test.ts",
+              "name": "p2Divergence",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/virtfs.test.ts",
+              "name": "divergence",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "divergenceLeavesVirtFsUnchanged",
+          "tests": [
+            {
+              "file": "test/unit/virtfs.test.ts",
+              "name": "divergenceUnchanged",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        }
+      ],
+      "coveredCount": 8,
+      "totalCount": 8,
+      "percentage": 100,
+      "runtimeCoverage": {
+        "status": "ok",
+        "declared": 0,
+        "found": 0,
+        "missing": [],
+        "minLinesPct": null
+      },
+      "bindings": {
+        "status": "bound",
+        "totalAcs": 8,
+        "boundAcs": 8,
+        "symbols": [
+          {
+            "ac": "midIterationThrowLeavesDiskUntouched",
+            "file": "src/virtfs/create.js.ts",
+            "symbol": "createVirtFs"
+          },
+          {
+            "ac": "noWriteUntilCommitPhase",
+            "file": "src/virtfs/internal.js.ts",
+            "symbol": "buildVirtFs"
+          },
+          {
+            "ac": "projectIsConstructedWithUseInMemoryFileSystem",
+            "file": "src/virtfs/create.js.ts",
+            "symbol": "createVirtFs"
+          },
+          {
+            "ac": "projectIsConstructedWithUseInMemoryFileSystem",
+            "file": "src/virtfs/internal.js.ts",
+            "symbol": "buildVirtFs"
+          },
+          {
+            "ac": "addSourceIsIdempotent",
+            "file": "src/virtfs/internal.js.ts",
+            "symbol": "buildVirtFs"
+          },
+          {
+            "ac": "sameProducerCanUpdateOwnEmission",
+            "file": "src/virtfs/internal.js.ts",
+            "symbol": "buildVirtFs"
+          },
+          {
+            "ac": "identicalContentsAreNoop",
+            "file": "src/virtfs/internal.js.ts",
+            "symbol": "buildVirtFs"
+          },
+          {
+            "ac": "twoGeneratorsSamePathDifferentContentsTriggersSG0020",
+            "file": "src/virtfs/internal.js.ts",
+            "symbol": "buildVirtFs"
+          },
+          {
+            "ac": "divergenceLeavesVirtFsUnchanged",
+            "file": "src/virtfs/internal.js.ts",
+            "symbol": "buildVirtFs"
+          }
+        ]
+      },
+      "satisfies": [
+        "REQ-TSCP-VIRTFS-ISOLATION",
+        "REQ-TSCP-DIVERGENCE-DIAGNOSTIC"
+      ]
+    },
+    {
+      "id": "TSCP-STRICTLY-ADDITIVE-EMISSION",
+      "title": "Generators may only write inside outDir; addSource rejects path traversal with SG0040",
+      "priority": "high",
+      "enabled": true,
+      "sourceFiles": [],
+      "acs": [
+        {
+          "method": "userSrcUntouchedAfterRun",
+          "tests": [
+            {
+              "file": "test/unit/strictly-additive.test.ts",
+              "name": "userSrcUntouchedAfterRun",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "userSrcUntouchedAfterRunError",
+          "tests": [
+            {
+              "file": "test/unit/strictly-additive.test.ts",
+              "name": "userSrcUntouchedAfterRunError",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "rejectsRelativeParentEscape",
+          "tests": [
+            {
+              "file": "test/unit/coverage-fillers.test.ts",
+              "name": "emptyAndDotPathsRejected",
+              "level": "unit"
+            },
+            {
+              "file": "test/unit/strictly-additive.test.ts",
+              "name": "rejectsRelativeEscape",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "rejectsAbsolutePath",
+          "tests": [
+            {
+              "file": "test/unit/strictly-additive.test.ts",
+              "name": "rejectsAbsolute",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "rejectsWindowsAbsolutePath",
+          "tests": [
+            {
+              "file": "test/unit/strictly-additive.test.ts",
+              "name": "rejectsWindowsAbsolute",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "rejectsNormalizedTraversal",
+          "tests": [
+            {
+              "file": "test/unit/strictly-additive.test.ts",
+              "name": "rejectsNormalizedTraversal",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "rejectionLeavesVirtFsUnchanged",
+          "tests": [
+            {
+              "file": "test/unit/strictly-additive.test.ts",
+              "name": "rejectionLeavesUnchanged",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "propertyRejectsPathTraversal",
+          "tests": [
+            {
+              "file": "test/unit/fuzz.test.ts",
+              "name": "p11RejectTraversal",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        },
+        {
+          "method": "propertyDiskOutsideOutDirByteIdentical",
+          "tests": [
+            {
+              "file": "test/unit/fuzz.test.ts",
+              "name": "p12DiskOutsideOutDirIdentical",
+              "level": "unit"
+            }
+          ],
+          "covered": true,
+          "expectedLevels": [
+            "unit"
+          ],
+          "coveredLevels": [
+            "unit"
+          ],
+          "gapLevels": []
+        }
+      ],
+      "coveredCount": 9,
+      "totalCount": 9,
+      "percentage": 100,
+      "runtimeCoverage": {
+        "status": "ok",
+        "declared": 0,
+        "found": 0,
+        "missing": [],
+        "minLinesPct": null
+      },
+      "bindings": {
+        "status": "bound",
+        "totalAcs": 9,
+        "boundAcs": 9,
+        "symbols": [
+          {
+            "ac": "userSrcUntouchedAfterRun",
+            "file": "src/virtfs/internal.js.ts",
+            "symbol": "buildVirtFs"
+          },
+          {
+            "ac": "userSrcUntouchedAfterRunError",
+            "file": "src/virtfs/internal.js.ts",
+            "symbol": "buildVirtFs"
+          },
+          {
+            "ac": "rejectsRelativeParentEscape",
+            "file": "src/virtfs/internal.js.ts",
+            "symbol": "buildVirtFs"
+          },
+          {
+            "ac": "rejectsAbsolutePath",
+            "file": "src/virtfs/internal.js.ts",
+            "symbol": "buildVirtFs"
+          },
+          {
+            "ac": "rejectsWindowsAbsolutePath",
+            "file": "src/virtfs/internal.js.ts",
+            "symbol": "buildVirtFs"
+          },
+          {
+            "ac": "rejectsNormalizedTraversal",
+            "file": "src/virtfs/internal.js.ts",
+            "symbol": "buildVirtFs"
+          },
+          {
+            "ac": "rejectionLeavesVirtFsUnchanged",
+            "file": "src/virtfs/internal.js.ts",
+            "symbol": "buildVirtFs"
+          },
+          {
+            "ac": "propertyRejectsPathTraversal",
+            "file": "src/virtfs/internal.js.ts",
+            "symbol": "buildVirtFs"
+          },
+          {
+            "ac": "propertyDiskOutsideOutDirByteIdentical",
+            "file": "src/virtfs/internal.js.ts",
+            "symbol": "buildVirtFs"
+          }
+        ]
+      },
+      "satisfies": [
+        "REQ-TSCP-STRICTLY-ADDITIVE-EMISSION",
+        "REQ-TSCP-EMISSION-PATH-VALIDATION"
+      ]
+    }
+  ],
+  "summary": {
+    "totalFeatures": 8,
+    "activeFeatures": 8,
+    "disabledFeatures": 0,
+    "totalACs": 64,
+    "coveredACs": 64,
+    "percentage": 100,
+    "criticalUncovered": [],
+    "runtimeWarnings": 0,
+    "orphanSourceFiles": [
+      {
+        "file": "src/attributes.ts",
+        "linesPct": 100
+      },
+      {
+        "file": "src/emit/banner.ts",
+        "linesPct": 100
+      },
+      {
+        "file": "src/emit/verify.ts",
+        "linesPct": 100
+      },
+      {
+        "file": "src/ports/file-system.ts",
+        "linesPct": 100
+      },
+      {
+        "file": "src/runner/run-fixpoint.ts",
+        "linesPct": 100
+      },
+      {
+        "file": "src/scan/find-decorated.ts",
+        "linesPct": 100
+      },
+      {
+        "file": "src/scan/parse-decorator-args.ts",
+        "linesPct": 100
+      },
+      {
+        "file": "src/scan/types.ts",
+        "linesPct": 0
+      },
+      {
+        "file": "src/types.ts",
+        "linesPct": 0
+      },
+      {
+        "file": "src/virtfs/commit.ts",
+        "linesPct": 100
+      },
+      {
+        "file": "src/virtfs/create.ts",
+        "linesPct": 100
+      },
+      {
+        "file": "src/virtfs/internal.ts",
+        "linesPct": 100
+      },
+      {
+        "file": "src/virtfs/path-validation.ts",
+        "linesPct": 100
+      }
+    ]
+  }
+}

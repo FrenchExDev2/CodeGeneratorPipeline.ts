@@ -1,0 +1,37 @@
+{
+  "name": "@frenchexdev2/code-generation-pipeline-workspace",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "Independent pnpm workspace for the TypeScript code generation pipeline",
+  "packageManager": "pnpm@11.20.0+sha512.9a6f330a95b66446ea088faf1521405a8a01f07fde7124cc9958dfed52d4bb436737e65b08f85f37b46fcba375092558ac51262b816844b22f63406ed166bfee",
+  "engines": {
+    "node": "^22.22.0 || ^24.0.0 || >=26.0.0"
+  },
+  "license": "Copyright (c) 2026 Stéphane ERARD. All rights reserved.",
+  "author": "Stéphane ERARD",
+  "scripts": {
+    "build": "pnpm -r --workspace-concurrency=4 run build",
+    "test": "pnpm -r --no-bail run test",
+    "typecheck:tests": "tsc -p tsconfig.integration.json",
+    "test:distribution": "pwsh -NoProfile -File scripts/Test-Distribution.ps1",
+    "test:ci": "pnpm run typecheck:tests && pnpm run test",
+    "test:release": "node --test test/release.test.mjs",
+    "release:prepare": "node scripts/release.mjs prepare",
+    "release:check": "node scripts/release.mjs check"
+  },
+  "devDependencies": {
+    "@typescript/native": "npm:typescript@7.0.2",
+    "@types/node": "catalog:",
+    "@stryker-mutator/core": "catalog:",
+    "@stryker-mutator/typescript-checker": "catalog:",
+    "@stryker-mutator/vitest-runner": "catalog:",
+    "@vitest/coverage-v8": "catalog:",
+    "fast-check": "catalog:",
+    "tsx": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:",
+    "@frenchexdev2/ts-codegen-pipeline": "workspace:*",
+    "@frenchexdev2/requirements-shared-kernel": "0.1.0"
+  }
+}
