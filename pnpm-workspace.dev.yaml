@@ -31,7 +31,7 @@ allowBuilds:
 # Security overrides are qualified by the build, schema, unit and mutation runs.
 overrides:
   # Paquets d'autres workspaces locaux (non publiés) : liés directement aux sources.
-  '@frenchexdev2/requirements-shared-kernel': 'link:../Requirements.ts/Requirements.SharedKernel.ts/packages/requirements-shared-kernel'
+  '@frenchexdev2/requirements-shared-kernel': 'link:../Requirements.ts/packages/Requirements.SharedKernel.ts/packages/requirements-shared-kernel'
   qs@6: 6.16.1
   vite@8: 8.1.6
   nanoid@3: 3.3.18
