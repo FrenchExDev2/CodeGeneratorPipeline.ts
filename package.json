@@ -18,7 +18,12 @@
     "test:ci": "pnpm run typecheck:tests && pnpm run test",
     "test:release": "node --test test/release.test.mjs",
     "release:prepare": "node scripts/release.mjs prepare",
-    "release:check": "node scripts/release.mjs check"
+    "release:check": "node scripts/release.mjs check",
+    "deps:dev": "node scripts/dependencies.mjs dev",
+    "deps:prod": "node scripts/dependencies.mjs prod",
+    "deps:lock:dev": "node scripts/dependencies.mjs dev --lockfile-only --no-frozen-lockfile --ignore-scripts",
+    "deps:lock:prod": "node scripts/dependencies.mjs prod --lockfile-only --no-frozen-lockfile --ignore-scripts",
+    "deps:recover": "node scripts/dependencies.mjs recover"
   },
   "devDependencies": {
     "@typescript/native": "npm:typescript@7.0.2",

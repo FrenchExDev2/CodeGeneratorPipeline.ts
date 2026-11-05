@@ -1,3 +1,11 @@
+> Current release ownership (2026-11-05): the shared kernel has moved to the
+> standalone `Requirements.SharedKernel.ts` repository and publishes from its own
+> `v*` tags via `ci.yml`. The former `requirements-shared-kernel/v*` workflow in
+> Requirements has been removed. Historical isolated-package instructions below
+> no longer apply. Publish the standalone kernel before its consumers. Consumer
+> dependency profiles are documented in [DEPENDENCIES.md](DEPENDENCIES.md).
+> Publish missing dependencies and generate the registry lockfile before tagging.
+
 # Releases npm par tag
 
 Le workspace conserve sa propre ligne de versions. Un tag `vX.Y.Z` publie tous ses packages publics en `X.Y.Z` ; la racine reste privée. Les versions des autres workspaces ne sont jamais modifiées automatiquement.
@@ -16,8 +24,8 @@ Depuis la racine du dépôt, remplacer la version d'exemple par la version voulu
 
 ```powershell
 node scripts/release.mjs prepare v1.2.3
-pnpm install --lockfile-only --no-frozen-lockfile --ignore-scripts
-pnpm install --frozen-lockfile
+pnpm run deps:lock:prod
+pnpm run deps:prod
 pnpm run build
 pnpm run test:ci
 node scripts/release.mjs check v1.2.3
@@ -57,7 +65,7 @@ Respecter cet ordre pour le démarrage :
 4. Dans Requirements, régénérer le lockfile depuis npm et préparer `v0.1.0`. Le shared kernel déjà publié sera ignoré par pnpm ; les autres packages seront publiés.
 5. Dans Builder, régénérer le lockfile depuis npm et préparer `v0.1.0`. Ses dépendances Requirements utilisent la série `0.1.x`.
 
-Ne pas taguer une release normale tant que `pnpm install --frozen-lockfile` échoue. Une réponse npm 404 n'autorise aucun repli vers une archive locale. Les tests, verrous et publications effectifs doivent être vérifiés à chaque étape.
+Ne pas taguer une release normale tant que `pnpm run deps:prod` échoue. Une réponse npm 404 n'autorise aucun repli vers une archive locale. Les tests, verrous et publications effectifs doivent être vérifiés à chaque étape.
 
 ## Publication isolée d'un package indépendant
 

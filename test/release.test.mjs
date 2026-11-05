@@ -131,3 +131,9 @@ test('isolated test support copies source fixtures without adding another instal
   await json('release.config.json', { isolatedPackages: ['kernel'], isolatedTestSources: { kernel: ['../outside'] } });
   await assert.rejects(stageRelease(root, 'kernel/v0.1.0', join(root, 'bad-stage')), /within the workspace/);
 });
+
+// Include workflow regressions in the existing CI release-tooling command.
+import './workflow.test.mjs';
+
+// Exercise dependency profile isolation before CI attempts production installation.
+import './dependencies.test.mjs';

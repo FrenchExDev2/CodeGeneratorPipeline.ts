@@ -47,7 +47,7 @@ catalogs:
       version: 5.0.5
 
 overrides:
-  '@frenchexdev2/requirements-shared-kernel': link:../Requirements.SharedKernel.ts/packages/requirements-shared-kernel
+  '@frenchexdev2/requirements-shared-kernel': link:../Requirements.ts/Requirements.SharedKernel.ts/packages/requirements-shared-kernel
   qs@6: 6.16.1
   vite@8: 8.1.6
   nanoid@3: 3.3.18
@@ -60,8 +60,8 @@ importers:
   .:
     devDependencies:
       '@frenchexdev2/requirements-shared-kernel':
-        specifier: link:../Requirements.SharedKernel.ts/packages/requirements-shared-kernel
-        version: link:../Requirements.SharedKernel.ts/packages/requirements-shared-kernel
+        specifier: link:../Requirements.ts/Requirements.SharedKernel.ts/packages/requirements-shared-kernel
+        version: link:../Requirements.ts/Requirements.SharedKernel.ts/packages/requirements-shared-kernel
       '@frenchexdev2/ts-codegen-pipeline':
         specifier: workspace:*
         version: link:packages/ts-codegen-pipeline
@@ -99,8 +99,8 @@ importers:
   packages/ts-codegen-pipeline:
     dependencies:
       '@frenchexdev2/requirements-shared-kernel':
-        specifier: link:../../../Requirements.SharedKernel.ts/packages/requirements-shared-kernel
-        version: link:../../../Requirements.SharedKernel.ts/packages/requirements-shared-kernel
+        specifier: link:../../../Requirements.ts/Requirements.SharedKernel.ts/packages/requirements-shared-kernel
+        version: link:../../../Requirements.ts/Requirements.SharedKernel.ts/packages/requirements-shared-kernel
       chokidar:
         specifier: 'catalog:'
         version: 6.0.0
